@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 namespace PlanTechShenApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PlantListPage : ContentPage
+    public partial class PlantListPage : TabbedPage
     {
         public PlantListPage()
         {
@@ -49,5 +49,7 @@ namespace PlanTechShenApp.Views
             }
 
         }
+
+       
     }
 }

@@ -1,12 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PlanTechShenApp.Views.CommunityPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+             x:Class="PlanTechShenApp.Views.CommunityPage"
+             Title="Community">
+    
+    <ContentPage>
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Clicked="OnToolbarItemClicked" />
+
+            <ToolbarItem Text="Client Support"
+                     Order="Secondary" />
+
+            <ToolbarItem Text="Profile"
+                     Order="Secondary" />
+
+            <ToolbarItem Text="IOT Setup"
+                     Order="Secondary" />
+
+            <ToolbarItem Text="Contact"
+                     Order="Secondary" />
+
+            <ToolbarItem Text="Settings"
+                     Order="Secondary" />
+        </ContentPage.ToolbarItems>
+    </ContentPage>
+    <TabBar>
+        <Tab Title="Client Support">
+            <ShellContent ContentTemplate="{DataTemplate Community:ClientSupportPage}" />
+        </Tab>
+        <Tab Title="Profile">
+            <ShellContent ContentTemplate="{DataTemplate Community:ProfilePage}" />
+        </Tab>
+        <Tab Title="IOT Setup">
+            <ShellContent ContentTemplate="{DataTemplate Community:IOTPage}" />
+        </Tab>
+        <Tab Title="Contact">
+            <ShellContent ContentTemplate="{DataTemplate Community:ContactPage}" />
+        </Tab>
+        <Tab Title="Settings">
+            <ShellContent ContentTemplate="{DataTemplate Community:SettingsPage}" />
+        </Tab>
+    </TabBar>
+
+
+</Shell>

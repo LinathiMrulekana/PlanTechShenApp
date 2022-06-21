@@ -7,18 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace PlanTechShenApp.Views
+namespace PlanTechShenApp.Community
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CommunityPage : Shell
+    public partial class ContactPage : ContentPage
     {
-        public CommunityPage()
+        public ContactPage()
         {
             InitializeComponent();
-        }
-        private void OnToolbarItemClicked(object sender, EventArgs e)
-        {
-
         }
     }
 }

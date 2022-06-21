@@ -1,15 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PlanTechShenApp.LogInPage"
-             Title="Log In">
-    
-    <ContentPage Title="Log in">
-        <ContentPage.ToolbarItems>
-            <ToolbarItem Text="My profile"
-                     Order="Primary" />
-        </ContentPage.ToolbarItems>
+             x:Class="PlanTechShenApp.LogInPage">
 
+    <ContentPage Title="Log in">
         <ContentPage.Content>
 
             <StackLayout>

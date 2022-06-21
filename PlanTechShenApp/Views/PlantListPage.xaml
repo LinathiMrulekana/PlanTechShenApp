@@ -6,15 +6,17 @@
     <ContentPage Title="Plant name">
         
         <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+" Clicked="OnItemAddClicked">
-            <ToolbarItem.IconImageSource>
-                <OnPlatform x:TypeArguments="ImageSource">
-                    <On Platform="Android, UWP"
+            <ToolbarItem Text="+" Clicked="OnItemAddClicked">
+                <ToolbarItem.IconImageSource>
+                    <OnPlatform x:TypeArguments="ImageSource">
+                        <On Platform="Android, UWP"
                         Value="plus.png" />
-                </OnPlatform>
-            </ToolbarItem.IconImageSource>
-        </ToolbarItem>
-    </ContentPage.ToolbarItems>
+                    </OnPlatform>
+                </ToolbarItem.IconImageSource>
+            </ToolbarItem>
+        </ContentPage.ToolbarItems>
+        
+        
     <ListView x:Name="listView"
               Margin="20"
               ItemSelected="OnlistViewItemSelected">

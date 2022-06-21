@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlanTechShenApp.LogInPage"
              Title="Log In">
+    
     <ContentPage Title="Log in">
         <ContentPage.ToolbarItems>
-            <ToolbarItem Text="Settings"
-                     Order="Secondary" />
+            <ToolbarItem Text="My profile"
+                     Order="Primary" />
         </ContentPage.ToolbarItems>
 
         <ContentPage.Content>

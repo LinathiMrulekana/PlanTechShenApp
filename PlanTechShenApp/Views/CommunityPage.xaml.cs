@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace PlanTechShenApp
+namespace PlanTechShenApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HistoryPage : TabbedPage
+    public partial class CommunityPage : ContentPage
     {
-        public HistoryPage()
+        public CommunityPage()
         {
             InitializeComponent();
         }

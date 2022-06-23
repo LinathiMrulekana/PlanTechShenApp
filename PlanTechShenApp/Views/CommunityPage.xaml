@@ -16,5 +16,9 @@
                      Order="Secondary"
                          Clicked="SettingsClicked"/>
         </ContentPage.ToolbarItems>
+    <ImageButton Source="chat.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="ImageClicked" />
   
 </ContentPage>

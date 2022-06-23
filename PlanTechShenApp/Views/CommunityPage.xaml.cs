@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -21,7 +21,6 @@ namespace PlanTechShenApp.Views
          {
             
          }
-
         private async void ClientSupportClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ClientSupportPage());
@@ -30,5 +29,18 @@ namespace PlanTechShenApp.Views
         {
             await Navigation.PushAsync(new SettingsPage());
         }
+
+        private async void ImageClicked(object sender, EventArgs e)
+        {
+            var current = Connectivity.NetworkAccess;
+
+            if (current == NetworkAccess.Internet)
+            {
+                await Browser.OpenAsync("https://www.gardening-forums.com/forums/general-gardening-talk.5/");
+
+             //   System.Diagnostics.Process.Start("https://www.gardening-forums.com/forums/general-gardening-talk.5/ ");
+            }
+        }
+
     }
 }

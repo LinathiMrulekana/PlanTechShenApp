@@ -9,7 +9,7 @@
             <StackLayout>
                 <Image Source="contact.png"/>
 
-                <Label Text="Surname"
+                <Label Text="Email"
                    TextColor="Black"
                    FontSize="25"/>
                 <Entry x:Name="Surname" />
@@ -19,7 +19,7 @@
                    FontSize="25"/>
                 <Entry x:Name="Password" />
 
-                <Button Text="Submit"
+                <Button Text="Log in"
                     FontSize="25"
                     Clicked="LogInClickedAsync"/>
                     

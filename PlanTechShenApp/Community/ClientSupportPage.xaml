@@ -4,9 +4,10 @@
              x:Class="PlanTechShenApp.Community.ClientSupportPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Client Support"
+                   TextColor="Black"
+                   FontSize="30"
+                   FontAttributes="Bold"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

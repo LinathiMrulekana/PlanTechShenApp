@@ -20,6 +20,8 @@
     <ListView x:Name="listView"
               Margin="20"
               ItemSelected="OnlistViewItemSelected">
+        
+        
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
@@ -37,5 +39,6 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
+        
     </ContentPage>
 </TabbedPage>

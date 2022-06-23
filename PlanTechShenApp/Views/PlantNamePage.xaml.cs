@@ -41,5 +41,10 @@ namespace PlanTechShenApp.Views
         {
             await Navigation.PopAsync();
         }
+
+        private void startDatePicker_DateSelected(object sender, DateChangedEventArgs e)
+        {
+
+        }
     }
 }

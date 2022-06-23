@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlanTechShenApp.Views.CommunityPage"
              Title="Community">
     
-    <ContentPage>
+   
         <ContentPage.ToolbarItems>
             <ToolbarItem Clicked="OnToolbarItemClicked" />
 
@@ -12,22 +12,9 @@
                      Order="Secondary"
                          Clicked="ClientSupportClicked" />
 
-            <ToolbarItem Text="Profile"
-                     Order="Secondary"
-                         Clicked="ProfileClicked"/>
-
-            <ToolbarItem Text="IOT Setup"
-                     Order="Secondary"
-                         Clicked="IOTSetupClicked"/>
-
-            <ToolbarItem Text="Contact"
-                     Order="Secondary" />
-
             <ToolbarItem Text="Settings"
-                     Order="Secondary" />
+                     Order="Secondary"
+                         Clicked="SettingsClicked"/>
         </ContentPage.ToolbarItems>
-    </ContentPage>
-    
-
-
-</Shell>
+  
+</ContentPage>

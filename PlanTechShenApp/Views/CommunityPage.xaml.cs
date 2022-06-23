@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace PlanTechShenApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CommunityPage : Shell
+    public partial class CommunityPage : ContentPage
     {
         public CommunityPage()
         {
@@ -26,15 +26,9 @@ namespace PlanTechShenApp.Views
         {
             await Navigation.PushAsync(new ClientSupportPage());
         }
-
-        private async void ProfileClicked(object sender, EventArgs e)
+        private async void SettingsClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProfilePage());
-        }
-
-        private async void IOTSetupClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new IOTPage());
+            await Navigation.PushAsync(new SettingsPage());
         }
     }
 }

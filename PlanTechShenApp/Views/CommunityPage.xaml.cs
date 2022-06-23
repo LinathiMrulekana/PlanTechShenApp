@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlanTechShenApp.Community;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,24 @@ namespace PlanTechShenApp.Views
         {
             InitializeComponent();
         }
-        private void OnToolbarItemClicked(object sender, EventArgs e)
-        {
+         private  void OnToolbarItemClicked(object sender, EventArgs e)
+         {
+            
+         }
 
+        private async void ClientSupportClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ClientSupportPage());
+        }
+
+        private async void ProfileClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProfilePage());
+        }
+
+        private async void IOTSetupClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new IOTPage());
         }
     }
 }

@@ -9,13 +9,16 @@
             <ToolbarItem Clicked="OnToolbarItemClicked" />
 
             <ToolbarItem Text="Client Support"
-                     Order="Secondary" />
+                     Order="Secondary"
+                         Clicked="ClientSupportClicked" />
 
             <ToolbarItem Text="Profile"
-                     Order="Secondary" />
+                     Order="Secondary"
+                         Clicked="ProfileClicked"/>
 
             <ToolbarItem Text="IOT Setup"
-                     Order="Secondary" />
+                     Order="Secondary"
+                         Clicked="IOTSetupClicked"/>
 
             <ToolbarItem Text="Contact"
                      Order="Secondary" />
@@ -24,23 +27,7 @@
                      Order="Secondary" />
         </ContentPage.ToolbarItems>
     </ContentPage>
-    <TabBar>
-        <Tab Title="Client Support">
-            <ShellContent ContentTemplate="{DataTemplate Community:ClientSupportPage}" />
-        </Tab>
-        <Tab Title="Profile">
-            <ShellContent ContentTemplate="{DataTemplate Community:ProfilePage}" />
-        </Tab>
-        <Tab Title="IOT Setup">
-            <ShellContent ContentTemplate="{DataTemplate Community:IOTPage}" />
-        </Tab>
-        <Tab Title="Contact">
-            <ShellContent ContentTemplate="{DataTemplate Community:ContactPage}" />
-        </Tab>
-        <Tab Title="Settings">
-            <ShellContent ContentTemplate="{DataTemplate Community:SettingsPage}" />
-        </Tab>
-    </TabBar>
+    
 
 
 </Shell>

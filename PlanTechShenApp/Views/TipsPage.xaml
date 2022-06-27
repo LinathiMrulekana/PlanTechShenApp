@@ -1,11 +1,145 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:PlanTechShenApp="clr-namespace:PlanTechShenApp"
              x:Class="PlanTechShenApp.Views.TipsPage"
              Title="Tips">
-    <ContentPage.Content>
-        <StackLayout>
-            
-        </StackLayout>
-    </ContentPage.Content>
+
+    <Grid RowSpacing="0"
+          ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Text="start up"
+            Clicked="StartUpClicked"/>
+
+
+        <BoxView Color="WhiteSmoke" />
+        <Label Text="PLANTS"
+               TextColor="Black"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               VerticalOptions="Start" />
+
+
+        <BoxView Grid.Column="1"
+                 Color="WhiteSmoke" />
+        <Label Grid.Column="1"
+               Text="GOOD NEIGHBOUR"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+
+        <BoxView Grid.Column="2"
+                 Color="WhiteSmoke" />
+        <Label Grid.Column="2"
+               Text="BAD NEIGHBOUR"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"
+               HorizontalOptions="End"
+               VerticalOptions="Start" />
+
+        <BoxView Grid.Row="1"
+                 Color="CornflowerBlue" />
+        <Label Grid.Row="1"
+               Text="Asparagus"
+               HorizontalOptions="Start"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="DodgerBlue" />
+
+        <Label Grid.Row="1"
+               Grid.Column="1"
+               Text="tomato,   pepper,   potato,   brassicas,carrots, parsley"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="1"
+                 Grid.Column="2"
+                 Color="DarkSlateBlue" />
+
+
+        <Label Grid.Row="1"
+               Grid.Column="2"
+               Text="legumes"
+               HorizontalOptions="End"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="2"
+                 Color="SteelBlue" />
+
+        <Label Grid.Row="2"
+               Text="Basil"
+               HorizontalOptions="Start"
+               VerticalOptions="End" />
+        <BoxView Grid.Row="2"
+                 Grid.Column="1"
+                 Color="LightBlue" />
+
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="pepper, tomato, asparagus, oregano"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+
+        <BoxView Grid.Row="2"
+                 Grid.Column="2"
+                 Color="GhostWhite" />
+        <Label Grid.Row="2"
+               Grid.Column="2"
+               Text="none"
+               HorizontalOptions="End"
+               VerticalOptions="End" />
+
+        <BoxView Color="AliceBlue"
+                 Grid.Row="3"
+                 Grid.Column="1"/>
+        <Label Text="Upper left"
+               HorizontalOptions="Start"
+               VerticalOptions="Start" />
+       
+        <BoxView Grid.Row="3"
+                 Grid.Column="2"
+                 Color="DarkSlateBlue" />
+        <Label Grid.Row="3"
+               Grid.Column="1"
+               Text="Center right"
+               HorizontalOptions="End"
+               VerticalOptions="Center" />
+        
+        <BoxView Grid.Row="3"
+                 Color="SteelBlue" />
+        <Label Grid.Row="2"
+               Text="Lower left"
+               HorizontalOptions="Start"
+               VerticalOptions="End" />
+        
+        <BoxView Grid.Row="3"
+                 Grid.Column="2"
+                 Color="LightBlue" />
+        <Label Grid.Row="4"
+               Grid.Column="1"
+               Text="Lower center"
+               HorizontalOptions="Center"
+               VerticalOptions="End" />
+        <BoxView Grid.Row="4"
+                 Grid.Column="2" />
+        <Label Grid.Row="4"
+               Grid.Column="2"
+               Text="Lower right"
+               HorizontalOptions="End"
+               VerticalOptions="End" />
+    </Grid>
 </ContentPage>

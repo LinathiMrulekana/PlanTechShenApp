@@ -18,7 +18,7 @@ namespace PlanTechShenApp.Views
         {
             InitializeComponent();
 
-            Children.Add(new TipsPage());
+            Children.Add( new TipsPage());
             Children.Add(new CommunityPage());
         }
         protected override async void OnAppearing()

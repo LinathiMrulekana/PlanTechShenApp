@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlanTechShenApp.Views.StartUpPage">
+    
+    
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="LightYellow" />
+            <Setter Property="BorderColor" Value="Blue" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="CornerRadius" Value="15" />
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="0, 4" />
+        </Style>
+
+        <Style x:Key="headerLabel" TargetType="Label">
+            <Setter Property="Margin" Value="0, 8" />
+            <Setter Property="FontSize" Value="Large" />
+            <Setter Property="TextColor" Value="Blue" />
+        </Style>
+
+    </ContentPage.Resources>
+
+    <ScrollView Orientation="Both">
+        <FlexLayout>
+            <Frame WidthRequest="300"
+                   HeightRequest="480">
+
+                <FlexLayout Direction="Column">
+                    <Label Text="Decide what to grow"
+                           Style="{StaticResource headerLabel}" />
+                    <Label Text="Ask yourself what kind of fruits or vegetables you like to eat taking into cosideraction your gardening space and void large palnts if it is too small" />
+                    <Label FlexLayout.Grow="1" />
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300"
+                   HeightRequest="480">
+
+                <FlexLayout Direction="Column">
+                    <Label Text="Choose the ideal garden location"
+                           Style="{StaticResource headerLabel}" />
+                    <Label Text="Make sure you find an area with flat land and sunlight." />
+                    <Label Text="  &#x2022; An area that cannot easily be washed off by floods and disrupred by any harzards" />
+                    <Label Text="  &#x2022; Aquire basic gardening tools" />
+                    <Label FlexLayout.Grow="1" />
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300"
+                   HeightRequest="480">
+
+                <FlexLayout Direction="Column">
+                    <Label Text="Test your soil"
+                           Style="{StaticResource headerLabel}" />
+                    <Label Text="Identify your soil type, pH level and how rich or poor it is in terms of nutrients." />
+                    <Label Text="  &#x2022; Look for toxic substances found in soil, mainly leas and arsenic" />
+                    <Label Text="  &#x2022; See whether it can maintain the plants you want to plants afor how long" />
+                    <Label FlexLayout.Grow="1" />
+                   </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300"
+                   HeightRequest="480">
+
+                <FlexLayout Direction="Column">
+                    <Label Text="Make your garden bed"
+                           Style="{StaticResource headerLabel}" />
+                    <Label Text="Clear away any existing vegetables or plants." />
+                    <Label Text="  &#x2022; Pull out weeds by hand from tha root" />
+                    <Label Text="  &#x2022; Spread a tick later of compost on your planting area, antheist 4 inches in depth" />
+                    <Label FlexLayout.Grow="1" />
+                    
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300"
+                   HeightRequest="480">
+
+                <FlexLayout Direction="Column">
+                    <Label Text="Plant your seed with care"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           Style="{StaticResource headerLabel}" />
+                    <Label Text="Make sure to sow your seeds at a proper depth (depth might appear on the seedling package)." />
+                    <Label Text="  &#x2022; Use your fingertips to make a proper hole and place the seed inside. " />
+                    <Label Text="  &#x2022; Cover the hole and press the soil firmly to the earth. " />
+                    <Label Text="  &#x2022; Water the surface when the soil dries out." />
+                    <Label FlexLayout.Grow="1" />
+
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300"
+                   HeightRequest="480">
+
+                <FlexLayout Direction="Column">
+                    <Label Text="Water suffienctly"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           Style="{StaticResource headerLabel}" />
+                    <Label Text="In the absence of a rainfall, provide sufficient amount of water in your garden." />
+                    <Label Text="  &#x2022; Stick a finger 2 inches in the soil to test the moisture. If the soil is moist, you must not wate it"/>
+                    <Label Text="  &#x2022; The goal is to make the soil moist not soggy." />
+                    <Label FlexLayout.Grow="1" />
+
+                </FlexLayout>
+            </Frame>
+
+            <Frame WidthRequest="300"
+                   HeightRequest="480">
+
+                <FlexLayout Direction="Column">
+                    <Label Text="Maintain and care for your garden"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           Style="{StaticResource headerLabel}" />
+                    <Label Text="Make use of seasonal rhythm for maintenance." />
+                    <Label Text="  &#x2022; In spring keep your weeds from getting a toe hold."/>
+                    <Label Text="  &#x2022; In summer you need extra vigilance to keep your garden well watered." />
+                    <Label Text="  &#x2022; Watch it closely.Yellow leaves need to be cut off because they are dead. Dense vegetation demands careful pruning to open things up so sunlight and fresh air can circulate." />
+                    <Label FlexLayout.Grow="1" />
+
+                </FlexLayout>
+            </Frame>
+
+
+        </FlexLayout>
+    </ScrollView>
+    
+
+</ContentPage>

@@ -7,7 +7,237 @@
             <Label Text="Client Support"
                    TextColor="Black"
                    FontSize="30"
-                   FontAttributes="Bold"/>
+                   FontAttributes="Bold" />
+
+            <Label Text="Overview"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic"/>
+
+            <Label Text="PlanTech-She'n is a mobile application designed to help people who are currently
+and those with the interest of starting their own gardens to closely monitor how they
+water their gardens. This application is a hybrid of software and hardware as it
+makes use of hardware components such as ESP32 moisture sensor and GSM
+module so as to notify the user when the plant/s must be watered."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="Data Safety"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic" />
+
+            <Label Text="The developer says that this app doesn't collect or share any user data. Learn more about data safety."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="No Data Shared With Third Parties"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic"/>
+
+            <Label Text="The developer says this app doesn't share user data with other companies or organizations. Learn more about how developers declare sharing."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="No Data Collected"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic"/>
+
+            <Label Text="The developer says this app doesn't collect user data"
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="Security Practices"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic"/>
+
+
+            <Label Text="Data Is Not Encrypted"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="Your data isn't transferred over a secure connection"
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="Data Can Not Be Deleted"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="The developer doesn't provide a way for you to request that your data be deleted"
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="Features"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic"/>
+
+            <Label Text=" 	Personalized plant list to keep track of what you plant in your garden
+ 	 moisture sensor indicator in a graphical representation
+ 	Beginners guide for those interested in venturing into gardening
+ 	Additional information on plants that can/not be planted next to each other
+"
+                  TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="Rating And Reviews"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic"/>
+
+            <Label Text="" 
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="FAQS"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic"/>
+
+            <Label Text="How Do I Manage My Personal Information?"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="If at any time you would like to change any information in your account, contact us at support@gardenanswers.com."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="How Can I Change My Password?"
+                   TextColor="Black"
+                   FontSize="17"
+                    FontAttributes="None"/>
+
+            <Label Text="You can easily update your password or email address from within the PlanTech-She'n app. Be sure to download the latest version from the app store. Then, from the Garden Answers app home page, go to the 'Settings' button and click on 'Update Account'. After making changes click on the 'Save Settings' button at the bottom or your changes will not be saved. 
+Please keep in mind these common pitfalls: 
+Avoid leading/trailing spaces entered by mistake while updating your password. Remember to write your new password down and avoid characters that can look the same to the eye. For example, confusion caused by uppercase 'I' and lowercase 'L'; letter 'O' and number '0'. Such passwords can be difficult to remember. If you do forget your password don't worry, simply use the forgot password link found at login or send us an email to: support@plantech-she'n.com 
+New email addresses must be verified once they have been entered. Our verification email will be sent instantly, if you do not see it in your inbox, please check your spam folder. If found in your spam folder move to your inbox so the link will work properly for verification. We need you to click on that link, we can't do that for you. Please whitelist Garden Answers by adding our email to your contacts list as explained here in our Frequently Asked Questions page
+"
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="How Can I Update My Garden List?"
+                   TextColor="Black"
+                    FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="Click on the add icon to add new plant to your existing plant list. If you would like to remove any plant from your plant list, kindly click on the plant to update."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="How Can I Take Care Of My Plants?"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="Please check the external links to gardening tips and the discussion forum"
+                    TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="How Much Does It Cost?"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="No service fee is charged for the use of the app."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="How Do I Change My Email Address?"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="The app will register your account to the email address it receives during the verification process. If you want to change your email address, you will need to update the from address in the verification email that you send to us. If your email address is incorrect, you can go to Settings and click Change Email Address."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="Why Do I Need To Give The App Access To My Camera And Photos?"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="There is absolutely no need to allow the app to have access to your camera and photos."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="Who Answers The Ask An Expert Questions?"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="The developers of the application attend to user enquiries, giving them the answers, they need so as to improve their user experience and improve the functionality of the App."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="How Can I Delete A Matched Search From My History?"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="Go to My Answers click on Recent.Select match that you would like to remove, slide row to left, much like removing a message when using iOS email app. Sliding the row to left will remove the entry from the list."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="How To Turn Of Notifications?"
+                   TextColor="Black"
+                   FontSize="17"
+                   FontAttributes="None"/>
+
+            <Label Text="From your iOS / Android settings page, go to notifications, find PlanTech-She'n and turn off notifications."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="Developers Info"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic"/>
+
+            <Label Text="PlanTech-She'n is a software developing group founded under Samsung Future Innovation Program so as to address tackle one of the nerve wrecking issues in South African societies, environmental sustainability which forms part of the seventeen sustainable development goals (SDGs) to transform the world. This group offers innovative plant technology for mobile devices to promote and manage gardens, building a community of gardening expects who can offer guidance and assistance to other users."
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+            <Label Text="Contact Us"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Italic"/>
+
+            <Label Text="Phone: (513) 354-1483
+
+Email: customerservice@PlanTech-She'n.com
+
+Web: PlanTech-She'n
+"
+                   TextColor="Black"
+                   FontSize="12"
+                   FontAttributes="None"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

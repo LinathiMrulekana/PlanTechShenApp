@@ -34,6 +34,7 @@
                            Style="{StaticResource headerLabel}" />
                     <Label Text="Ask yourself what kind of fruits or vegetables you like to eat taking into cosideraction your gardening space and void large palnts if it is too small" />
                     <Label FlexLayout.Grow="1" />
+                    <Image Source="https://images.squarespace-cdn.com/content/v1/5d507f7b3138fd00018fdcbe/c2796ed8-1d20-46d9-85fb-b69dc9157a50/How+to+choose+which+vegetables+to+plant+in+your+garden+1.jpg"/>
                 </FlexLayout>
             </Frame>
 

@@ -7,7 +7,7 @@
     <ContentPage.Resources>
         <Style TargetType="Frame">
             <Setter Property="BackgroundColor" Value="LightYellow" />
-            <Setter Property="BorderColor" Value="Blue" />
+            <Setter Property="BorderColor" Value="Black" />
             <Setter Property="Margin" Value="10" />
             <Setter Property="CornerRadius" Value="15" />
         </Style>
@@ -32,9 +32,10 @@
                 <FlexLayout Direction="Column">
                     <Label Text="Decide what to grow"
                            Style="{StaticResource headerLabel}" />
+                    <Image Source="https://400156-1685166-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2017/01/what-to-plant-in-garden.png"/>
                     <Label Text="Ask yourself what kind of fruits or vegetables you like to eat taking into cosideraction your gardening space and void large palnts if it is too small" />
                     <Label FlexLayout.Grow="1" />
-                    <Image Source="https://images.squarespace-cdn.com/content/v1/5d507f7b3138fd00018fdcbe/c2796ed8-1d20-46d9-85fb-b69dc9157a50/How+to+choose+which+vegetables+to+plant+in+your+garden+1.jpg"/>
+                   
                 </FlexLayout>
             </Frame>
 
@@ -48,6 +49,7 @@
                     <Label Text="  &#x2022; An area that cannot easily be washed off by floods and disrupred by any harzards" />
                     <Label Text="  &#x2022; Aquire basic gardening tools" />
                     <Label FlexLayout.Grow="1" />
+                    <Image Source="https://empire-s3-production.bobvila.com/articles/wp-content/uploads/2022/01/iStock-1225085670.jpg"/>
                 </FlexLayout>
             </Frame>
 
@@ -61,7 +63,8 @@
                     <Label Text="  &#x2022; Look for toxic substances found in soil, mainly leas and arsenic" />
                     <Label Text="  &#x2022; See whether it can maintain the plants you want to plants afor how long" />
                     <Label FlexLayout.Grow="1" />
-                   </FlexLayout>
+                    <Image Source="https://k2j4u5m5.stackpathcdn.com/wp-content/uploads/2017/05/home-garden-soil-testing-is-easy.jpg"/>
+                </FlexLayout>
             </Frame>
 
             <Frame WidthRequest="300"
@@ -74,7 +77,8 @@
                     <Label Text="  &#x2022; Pull out weeds by hand from tha root" />
                     <Label Text="  &#x2022; Spread a tick later of compost on your planting area, antheist 4 inches in depth" />
                     <Label FlexLayout.Grow="1" />
-                    
+                    <Image Source="https://www.homestratosphere.com/wp-content/uploads/2021/08/colorful-veggie-garden-aug26.jpg"/>
+
                 </FlexLayout>
             </Frame>
 
@@ -91,6 +95,7 @@
                     <Label Text="  &#x2022; Cover the hole and press the soil firmly to the earth. " />
                     <Label Text="  &#x2022; Water the surface when the soil dries out." />
                     <Label FlexLayout.Grow="1" />
+                    <Image Source="https://thecozyapron.com/wp-content/uploads/2018/02/sprouted-seed_thecozyapron.jpg"/>
 
                 </FlexLayout>
             </Frame>
@@ -107,6 +112,7 @@
                     <Label Text="  &#x2022; Stick a finger 2 inches in the soil to test the moisture. If the soil is moist, you must not wate it"/>
                     <Label Text="  &#x2022; The goal is to make the soil moist not soggy." />
                     <Label FlexLayout.Grow="1" />
+                    <Image Source="https://gardenplannerwebsites.azureedge.net/blog/plastic-bottle-hacks-watering-2x.jpg"/>
 
                 </FlexLayout>
             </Frame>
@@ -124,6 +130,7 @@
                     <Label Text="  &#x2022; In summer you need extra vigilance to keep your garden well watered." />
                     <Label Text="  &#x2022; Watch it closely.Yellow leaves need to be cut off because they are dead. Dense vegetation demands careful pruning to open things up so sunlight and fresh air can circulate." />
                     <Label FlexLayout.Grow="1" />
+                    <Image Source="https://brinly.com/wp-content/uploads/2020/07/blo0g.jpg"/>
 
                 </FlexLayout>
             </Frame>

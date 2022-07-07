@@ -11,20 +11,25 @@ using Xamarin.Forms.Xaml;
 namespace PlanTechShenApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LogInPage :TabbedPage
+    public partial class LogInPage :ContentPage
     {
         public LogInPage()
         {
             InitializeComponent();
 
             var image = new Image { Source = "contact.png" };
-            Children.Add(new SignIn());
+            //Children.Add(new SignIn());
         }
 
         private async void LogInClickedAsync(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PlantListPage());
+            await Navigation.PushAsync(new PlantsHomeTabbedPage());
 
+        }
+
+        private async void SignUpClickedAsync(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SignIn());
         }
     }
 }

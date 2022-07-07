@@ -1,29 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PlanTechShenApp.LogInPage">
+             x:Class="PlanTechShenApp.LogInPage"
+             Title="Log in">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-    <ContentPage Title="Log in">
-        <ContentPage.Content>
+    <ContentPage.Content>
+        <StackLayout Padding="0,20,0,0">
+            <Image Source="contact.png"/>
+            <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Email" PlaceholderColor="DimGray"
+                   HeightRequest="40" Keyboard="Email"/>
 
-            <StackLayout>
-                <Image Source="contact.png"/>
+            <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="DimGray"
+                   HeightRequest="40" Keyboard="Default"/>
 
-                <Label Text="Email"
-                   TextColor="Black"
-                   FontSize="25"/>
-                <Entry x:Name="Surname" />
-
-                <Label Text="Password"
-                   TextColor="Black"
-                   FontSize="25"/>
-                <Entry x:Name="Password" />
-
-                <Button Text="Log in"
-                    FontSize="25"
+            <Button Text="Log in"
+                    FontSize="20"
                     Clicked="LogInClickedAsync"/>
-                    
+            
+            <Button Text="Sign up"
+                    FontSize="20"
+                    Clicked="SignUpClickedAsync"/>
         </StackLayout>
     </ContentPage.Content>
-    </ContentPage>
-</TabbedPage>
+   
+</ContentPage>

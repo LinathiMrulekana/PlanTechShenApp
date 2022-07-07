@@ -38,7 +38,7 @@ namespace PlanTechShenApp.Views
             {
                 await Browser.OpenAsync("https://www.gardening-forums.com/forums/general-gardening-talk.5/");
 
-             //   System.Diagnostics.Process.Start("https://www.gardening-forums.com/forums/general-gardening-talk.5/ ");
+            
             }
         }
 

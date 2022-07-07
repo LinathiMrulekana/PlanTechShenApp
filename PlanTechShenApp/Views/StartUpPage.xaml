@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PlanTechShenApp.Views.StartUpPage">
+             x:Class="PlanTechShenApp.Views.StartUpPage"
+             Title="Start up">
     
     
     <ContentPage.Resources>
@@ -19,7 +20,7 @@
         <Style x:Key="headerLabel" TargetType="Label">
             <Setter Property="Margin" Value="0, 8" />
             <Setter Property="FontSize" Value="Large" />
-            <Setter Property="TextColor" Value="Blue" />
+            <Setter Property="TextColor" Value="Black" />
         </Style>
 
     </ContentPage.Resources>

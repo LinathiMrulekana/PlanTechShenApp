@@ -10,7 +10,11 @@ namespace PlanTechShenApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LogInPage());
+            MainPage = new NavigationPage(new LogInPage())
+            {
+                BarBackgroundColor = Color.DarkGreen,
+                BackgroundColor = Color.White,
+            };
 
         }
 

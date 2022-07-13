@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanTechShenApp", "PlanTech
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanTechShenWebApi", "..\..\Users\Linathi Mrulekana\Downloads\PlanTechShenWebApi (1)\PlanTechShenWebApi\PlanTechShenWebApiSln\PlanTechShenWebApi\PlanTechShenWebApi.csproj", "{8649B95A-1871-44BD-80CE-496D7B95BDAA}"
 EndProject
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "PlantTechShenNFApp1", "..\..\excersise\Repos\NFApp1\PlantTechShenNFApp1.nfproj", "{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,24 @@ Global
 		{8649B95A-1871-44BD-80CE-496D7B95BDAA}.Release|iPhone.Build.0 = Release|Any CPU
 		{8649B95A-1871-44BD-80CE-496D7B95BDAA}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{8649B95A-1871-44BD-80CE-496D7B95BDAA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Debug|iPhone.Deploy.0 = Debug|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Release|iPhone.Build.0 = Release|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Release|iPhone.Deploy.0 = Release|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlanTechShenApp.LogInPage"
              Title="Log in">
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Entry">
@@ -14,12 +15,21 @@
 
     <ContentPage.Content>
         <StackLayout Padding="0,20,0,0">
-            <Image Source="contact.png"/>
-            <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Email" PlaceholderColor="DimGray"
-                   HeightRequest="40" Keyboard="Email"/>
+            <Image Source="https://cdn2.vectorstock.com/i/1000x1000/22/06/plant-pot-cartoon-isolated-blue-lines-vector-24932206.jpg"/>
+            
+            <Entry x:Name="Email" 
+                   Text="{Binding Email}" 
+                   Placeholder="Email" 
+                   PlaceholderColor="DimGray"
+                   HeightRequest="40"
+                   Keyboard="Email"/>
 
-            <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="DimGray"
-                   HeightRequest="40" Keyboard="Default"/>
+            <Entry x:Name="Password" 
+                   Text="{Binding Password}"
+                   Placeholder="Password" 
+                   PlaceholderColor="DimGray"
+                   HeightRequest="40"
+                   Keyboard="Default"/>
 
             <Button Text="Log in"
                     FontSize="20"

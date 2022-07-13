@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
-            x:Class="PlanTechShenApp.Views.PlantListPage" Title="Plant name">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="PlanTechShenApp.Views.PlantListPage" 
+             Title="Plant name">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+" Clicked="OnItemAddClicked">
+        <ToolbarItem Text="+"
+                     Clicked="OnItemAddClicked">
             <ToolbarItem.IconImageSource>
                 <OnPlatform x:TypeArguments="ImageSource">
                     <On Platform="Android, UWP"
@@ -13,36 +16,37 @@
             </ToolbarItem.IconImageSource>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
+    <ScrollView VerticalOptions="FillAndExpand">
+         <StackLayout>
 
-    <StackLayout>     
-
-        <forms:ChartView x:Name="chartView"
+            <forms:ChartView x:Name="chartView"
                          Grid.Row="2"
                          BackgroundColor="White"
                         HeightRequest="250"/>
 
-      <ListView x:Name="listView"
-              Margin="20"
-              ItemSelected="OnlistViewItemSelected">
-        
-        
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
-                    <StackLayout Margin="20,0,0,0"
-                                 Orientation="Horizontal"
-                                 HorizontalOptions="FillAndExpand">
-                        <Label Text="{Binding Name}"
-                               VerticalTextAlignment="Center"
-                               HorizontalOptions="StartAndExpand" />
-                        <Image Source="check.png"
-                               HorizontalOptions="End"
-                               IsVisible="{Binding Done}" />
-                    </StackLayout>
-                </ViewCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
-      
+            <ListView x:Name="listView"
+                      Margin="20"
+                      ItemSelected="OnlistViewItemSelected">
+
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="20,0,0,0"
+                                         Orientation="Horizontal"
+                                         HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding Name}"
+                                       VerticalTextAlignment="Center"
+                                       HorizontalOptions="StartAndExpand" />
+                                <Image Source="check.png"
+                                       HorizontalOptions="End"
+                                       IsVisible="{Binding Done}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
+    </ScrollView>
 </ContentPage>

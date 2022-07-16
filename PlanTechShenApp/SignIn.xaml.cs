@@ -22,5 +22,15 @@ namespace PlanTechShenApp
         {
             await Navigation.PushAsync(new PlantsHomeTabbedPage());
         }
+
+        private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+
+        }
+
+        private async void ForgotPasswordButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ForgotPasswordPage());
+        }
     }
 }

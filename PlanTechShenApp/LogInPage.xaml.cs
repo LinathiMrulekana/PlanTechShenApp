@@ -27,9 +27,9 @@ namespace PlanTechShenApp
 
         }
 
-        private async void SignUpClickedAsync(object sender, EventArgs e)
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SignIn());
+           await Navigation.PushAsync(new SignIn());
         }
     }
 }

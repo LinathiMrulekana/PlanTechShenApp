@@ -1,58 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
              x:Class="PlanTechShenApp.SignIn"
+             BackgroundColor="FloralWhite"
              Title="Sign up">
+
+
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Entry">
                 <Setter Property="FontAttributes" Value="Italic" />
                 <Setter Property="TextColor" Value="Black" />
-                <Setter Property="PlaceholderColor" Value="DimGray"/>
+                <Setter Property="PlaceholderColor" Value="Black"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-           
-            <Entry x:Name="Name"
-                   Text="{Binding Name}"
-                   Placeholder="Name" 
-                   HeightRequest="40" 
-                   Keyboard="Text"/>
+        <StackLayout 
+            Padding="10">
+            <Frame BorderColor="LightGreen" 
+                   CornerRadius="50"
+                   BackgroundColor="White"
+                   Margin="10"
+                   HeightRequest="50">
+                <Entry
+                    TextColor="Black"
+                    FontSize="18"
+                    Placeholder="Username"
+                    >
+                    
+                </Entry>
+               
+    
+            </Frame>
+            <Frame BorderColor="LightGreen" 
+                   CornerRadius="50"
+                   BackgroundColor="White"
+                   Margin="15">
+                <Entry
+                    TextColor="Black"
+                    FontSize="18"
+                    Placeholder="Password"
+                    IsPassword="False"
+                    x:Name="EntryPassword">
 
-            <Entry x:Name="Surname"
-                   Text="{Binding Surname}" 
-                   Placeholder="Surname" 
-                   HeightRequest="40"
-                   Keyboard="Text"/>
-            
-            <Entry x:Name="Email" 
-                   Text="{Binding Email}"
-                   Placeholder="Email" 
-                   HeightRequest="40"
-                   Keyboard="Email"/>
+                </Entry>
+            </Frame>
+            <RelativeLayout Padding="25">
+                <CheckBox
+                    Color="Black"
+                    IsChecked="False"
+                    CheckedChanged="CheckBox_CheckedChanged"
+                    x:Name="CheckBox"
+                    Margin="15,0,0,0">
+                </CheckBox>
+                <Label
+                    Text="Show Password"
+                    TextColor="Black"
+                    FontSize="18"
+                    RelativeLayout.XConstraint="50"
+                    RelativeLayout.YConstraint="3"/>
 
-            <Entry x:Name="Telephone" 
-                   Text="{Binding Telephone}"
-                   Placeholder="Telephone" 
-                   HeightRequest="40"
-                   Keyboard="Telephone"/>
+                <Button
+                    x:Name="ForgotPassword"
+                    Text="Forgot Password?"
+                    TextColor="black"
+                    FontSize="18"
+                    BackgroundColor="Transparent"
+                    
+                    RelativeLayout.XConstraint="205"
+                    RelativeLayout.YConstraint="-8"
+                    Clicked="ForgotPasswordButton_Clicked"
+                    TextTransform="None"/>
+                <RelativeLayout>
+                    <Button Margin="140,50,0,0"
+                        x:Name="SignUpButton"
+                        Text="sign up">
+                        
+                    </Button>
+                </RelativeLayout>
 
-            <Entry x:Name="Password" 
-                   Text="{Binding Password}" 
-                   Placeholder="Password" 
-                   HeightRequest="40"
-                   Keyboard="Text"/>
 
-            <Entry x:Name="ConfirmPassword"
-                   Text="{Binding ConfirmPassword}"
-                   Placeholder="ConfirmPassword" 
-                   HeightRequest="40" 
-                   Keyboard="Text"/>
-
-            <Button Text="Sign up"
-                    Clicked="SignInClicked"/>
+            </RelativeLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

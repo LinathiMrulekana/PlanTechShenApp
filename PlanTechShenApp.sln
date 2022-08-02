@@ -9,9 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanTechShenApp.iOS", "Plan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanTechShenApp", "PlanTechShenApp\PlanTechShenApp.csproj", "{99A1EA53-387A-48E4-A5A9-E22891BAA1D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanTechShenWebApi", "..\..\Users\Linathi Mrulekana\Downloads\PlanTechShenWebApi (1)\PlanTechShenWebApi\PlanTechShenWebApiSln\PlanTechShenWebApi\PlanTechShenWebApi.csproj", "{8649B95A-1871-44BD-80CE-496D7B95BDAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanTechShenWebApi", "..\Users\Linathi Mrulekana\Downloads\PlanTechShenWebApi (1)\PlanTechShenWebApi\PlanTechShenWebApiSln\PlanTechShenWebApi\PlanTechShenWebApi.csproj", "{8649B95A-1871-44BD-80CE-496D7B95BDAA}"
 EndProject
-Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "PlantTechShenNFApp1", "..\..\excersise\Repos\NFApp1\PlantTechShenNFApp1.nfproj", "{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}"
+Project("{11A8DD76-328B-46DF-9F39-F559912D0360}") = "PlantTechShenNFApp1", "..\excersise\Repos\NFApp1\PlantTechShenNFApp1.nfproj", "{F2F3CD4B-9C73-4E07-9DCC-F9CD8A22458F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F8D59334-964A-4377-864D-E5DACD8CBCD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{078606F6-0600-46BA-869C-A1A5460A4BED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,6 +114,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{435DB921-A5E6-4072-839C-24EC228EE286} = {078606F6-0600-46BA-869C-A1A5460A4BED}
+		{FBCB84C8-1A53-4802-8741-D07C06D9BD1D} = {078606F6-0600-46BA-869C-A1A5460A4BED}
+		{99A1EA53-387A-48E4-A5A9-E22891BAA1D2} = {078606F6-0600-46BA-869C-A1A5460A4BED}
+		{8649B95A-1871-44BD-80CE-496D7B95BDAA} = {F8D59334-964A-4377-864D-E5DACD8CBCD6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBA52311-A7C0-40E0-B596-7CDA520A0311}

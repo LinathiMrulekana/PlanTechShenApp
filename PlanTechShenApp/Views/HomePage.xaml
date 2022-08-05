@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="PlanTechShenApp.HomePage"
+             BackgroundColor="FloralWhite"
+             Title="Sign up">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="FontAttributes" Value="Italic" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="PlaceholderColor" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout 
+            Padding="10">
+            <Frame BorderColor="LightGreen" 
+                   CornerRadius="50"
+                   BackgroundColor="White"
+                   Margin="10"
+                   HeightRequest="50">
+                <Entry
+                    TextColor="Black"
+                    FontSize="18"
+                    Placeholder="Name"
+                    Keyboard="Default"/>
+            </Frame>
+
+            <Frame BorderColor="LightGreen" 
+                   CornerRadius="50"
+                   BackgroundColor="White"
+                   Margin="10"
+                   HeightRequest="50">
+                <Entry
+                    TextColor="Black"
+                    FontSize="18"
+                    Placeholder="Surname"
+                    Keyboard="Default"/>
+            </Frame>
+
+            <Frame BorderColor="LightGreen" 
+                   CornerRadius="50"
+                   BackgroundColor="White"
+                   Margin="10"
+                   HeightRequest="50">
+                <Entry
+                    TextColor="Black"
+                    FontSize="18"
+                    Placeholder="Cellphone"
+                    Keyboard="Telephone"/>
+            </Frame>
+            
+            <Frame BorderColor="LightGreen" 
+                   CornerRadius="50"
+                   BackgroundColor="White"
+                   Margin="10"
+                   HeightRequest="50">
+                <Entry
+                    TextColor="Black"
+                    FontSize="18"
+                    Placeholder="Email"
+                    Keyboard="Email"/>
+            </Frame>
+
+
+            <Frame BorderColor="LightGreen" 
+                   CornerRadius="50"
+                   BackgroundColor="White"
+                   Margin="15">
+                <Entry
+                    TextColor="Black"
+                    FontSize="18"
+                    Placeholder="Password"
+                    IsPassword="False"
+                    x:Name="Password"/>
+            </Frame>
+
+            <Frame BorderColor="LightGreen" 
+                   CornerRadius="50"
+                   BackgroundColor="White"
+                   Margin="15">
+                <Entry
+                    TextColor="Black"
+                    FontSize="18"
+                    Placeholder="Confirm Password"
+                    IsPassword="False"
+                    x:Name="ConfirmPassword"/>
+            </Frame>
+
+            <Button Text="Sign up"
+                    FontSize="20"
+                    Clicked="SignInClicked"
+                    CornerRadius="50"
+                    BorderWidth="1.5"
+                    BorderColor="LightGreen"
+                    />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

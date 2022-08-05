@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlanTechShenApp.Community.IOTPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="What You Need To Get Started"
+                   Style="{StaticResource LabelStyle}"
+                    TextDecorations="Underline"/>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout>
+
+                    <Label Text="ESP32, capacitative moisture sensor (3,3V)"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+                    <Image Source="https://cdn.shopify.com/s/files/1/1509/1638/products/1.Main_1x_BodenfeuchtesensorHygrometerModulV1.2kapazitiv_1024x.jpg?v=1597421982"/>
+
+
+
+                    <Label Text="BME280 temp and humidity sensor"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+                    <Image Source="https://bc-robotics.com/wp-content/uploads/2015/08/bme-280.jpg"/>
+
+
+
+                    <Label Text="3,3V triggered relay, depending on the volume of pumping (small scale)"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+                    <Image Source="https://alexnld.com/wp-content/uploads/2018/12/6f8277d1-ab6a-451f-a0dd-82a3c7463a7c.jpg"/>
+
+
+
+                    <Label Text="12V peristaltic pump"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+                    <Image Source="https://www.robotics.org.za/image/cache/catalog/kamoer/KAM-S10B-12V/NKP-DC-S10B-001-500x500.jpg"/>
+
+
+
+                    <Label Text="12V power supply"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+                    <Image Source="https://www.robofactory.co.za/1827-large_default/power-supply-12v-2a-compatible-with-arduino-uno.jpg"/>
+
+
+
+                    <Label Text="GSM Module"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+                    <Image Source="https://5.imimg.com/data5/EW/BR/MY-76939021/gsm-module-500x500.jpg" />
+
+
+
+                    <Label Text="LED lights"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+                    <Image Source="https://www.electronicshub.org/wp-content/uploads/2021/02/MARS-HYDRO-Led-Grow-Light.jpg"/>
+
+
+
+                    <Label Text="How To Set Up Your IoT device and Have It Running "
+                   TextColor="Black"
+                   TextDecorations="Underline"
+                   FontSize="25"
+                   FontAttributes="Bold"/>
+
+
+
+                    <Label Text="Step 1: To activate Arduino uno, moisture sensors and other devices, switch the power ON."
+                           TextColor="Black"
+                           FontSize="20"/>
+
+
+                    <Label Text="Step 2: Execute the operation of hardware devices such as, sensors, ESP32, GSM module."
+                           TextColor="Black"
+                           FontSize="20"/>
+
+                    <Label Text="Step 3: Read system information from the configuration file and execute programme accordingly."
+                           TextColor="Black"
+                           FontSize="20"/>
+
+                    <Label Text="Step 4: Read and analyse results fetched from moisture sensor to check irrigation needs of your farm or garden."
+                           TextColor="Black"
+                           FontSize="20"/>
+
+                    <Label Text="Step 5: If the moisture level has decreased from the set point, the water pump will automatically start."
+                           TextColor="Black"
+                           FontSize="20"/>
+
+                    <Label Text="Step 6: Communicate with user using GSM module by transferring data and wait for user response."
+                           TextColor="Black"
+                           FontSize="20"/>
+
+                    <Label Text="Step 7: As garden or farm receives sufficient water, motor/pump automatically stops, and water/energy is saved."
+                           TextColor="Black"
+                           FontSize="20"/>
+
+                    <Label Text="Watch the video:"
+                           TextColor="Black"
+                           FontSize="20"/>
+
+
+                </StackLayout>
+
+            </ScrollView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,6 +1,7 @@
 ﻿using Microcharts;
 using PlanTechShenApp.Data;
 using PlanTechShenApp.Models;
+using PlanTechShenApp.ViewModels;
 using SkiaSharp;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static PlanTechShenApp.ViewModels.MainPageViewModel;
 
 namespace PlanTechShenApp.Views
 {
@@ -20,6 +22,10 @@ namespace PlanTechShenApp.Views
         {
             InitializeComponent();
 
+            var vm = new PlantListViewModel();
+
+            BindingContext = vm;
+
         }
         protected override async void OnAppearing()
         {
@@ -27,6 +33,11 @@ namespace PlanTechShenApp.Views
 
             PlantItemDatabase database = await PlantItemDatabase.Instance;
            listView.ItemsSource = await database.GetItemsAsync();
+
+
+            var vm = (PlantListViewModel) BindingContext;
+
+            await vm.GetDetections();
 
             PopulateChart();
         }
@@ -54,8 +65,30 @@ namespace PlanTechShenApp.Views
 
         public void PopulateChart()
         {
+            var vm = (PlantListViewModel)BindingContext;
+            var detections = vm.Detections;
+
+
+            List<ChartEntry> entries = new List<ChartEntry>();
             LineChart lc = new LineChart();
-            lc.LabelTextSize = 48;
+
+            foreach (var detection in detections)
+            {
+                
+                var chartEntry = new ChartEntry((float) detection.WaterLevelPercentage)  ;
+
+                chartEntry.Label = detection.DetectionDate.ToShortDateString();
+               
+                entries.Add(chartEntry);
+
+            }
+
+            lc.Entries = entries;
+
+            chartView.Chart = lc;
+
+
+/*            lc.LabelTextSize = 48;
             lc.LineMode = LineMode.Straight;
 
             List<ChartEntry> entries = new List<ChartEntry>();
@@ -66,25 +99,18 @@ namespace PlanTechShenApp.Views
 
             entries.Add(entry);
 
-            entry = new ChartEntry(20) { Label = "Test Label 2", ValueLabelColor = color };
+           // entry = new ChartEntry(20) { Label = "Test Label 2", ValueLabelColor = color };
 
-            entries.Add(entry);
-
-            entry = new ChartEntry(30) { Label = "Test Label 3", ValueLabelColor = color };
-
-            entries.Add(entry);
+           // entries.Add(entry);
 
             entry = new ChartEntry(80) { Label = "Test Label 4", ValueLabelColor = color };
 
             entries.Add(entry);
 
-
-
             lc.Entries = entries;
 
-            // lc.Entries.Add()
-
             chartView.Chart = lc;
+*/
 
         }
 

@@ -12,7 +12,11 @@
                          Order="Secondary"
                          Clicked="ClientSupportClicked" />
 
-            <ToolbarItem Text="Settings"
+        <ToolbarItem Text="IOT Set up"
+                         Order="Secondary"
+                         Clicked="IOTSetupClicked"/>
+
+        <ToolbarItem Text="Settings"
                          Order="Secondary"
                          Clicked="SettingsClicked"/>
         </ContentPage.ToolbarItems>

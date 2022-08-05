@@ -18,18 +18,32 @@ namespace PlanTechShenApp
             InitializeComponent();
 
             var image = new Image { Source = "contact.png" };
-            //Children.Add(new SignIn());
+
         }
 
-        private async void LogInClickedAsync(object sender, EventArgs e)
+       
+private async void LogInClickedAsync(object sender, EventArgs e)
+ {
+
+     string Username = "---";
+     string Password = "---";
+
+     if (!(string.IsNullOrEmpty(Username)) && !(string.IsNullOrEmpty(Password)))
+     {
+         await Navigation.PushAsync(new PlantsHomeTabbedPage());
+     }
+            else {
+                 await DisplayAlert("Alert", "PLEASE FILL IN THE BLANKS", "OK");
+            }
+
+
+        }
+
+
+private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PlantsHomeTabbedPage());
-
+           await Navigation.PushAsync(new HomePage());
         }
 
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-           await Navigation.PushAsync(new SignIn());
-        }
     }
 }

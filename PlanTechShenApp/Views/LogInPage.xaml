@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:behaviors="http://xamarin.com/schemas/2020/toolkit"
              x:Class="PlanTechShenApp.LogInPage"
              BackgroundColor="FloralWhite"
              Title="Log in">
@@ -10,7 +10,10 @@
             <Style TargetType="Entry">
                 <Setter Property="FontAttributes" Value="Italic" />
                 <Setter Property="TextColor" Value="Black" />
+
             </Style>
+            
+            
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -38,14 +41,16 @@
                            
                 </Frame.Content>
             </Frame>
-            
+
             <Entry x:Name="Email" 
-                   Text="{Binding Email}" 
+                   Text="{Binding Email.Value,Mode=TwoWay}" 
                    Placeholder="Email" 
                    PlaceholderColor="DimGray"
                    HeightRequest="40"
-                   Keyboard="Email"
-                   />
+                   Keyboard="Email">
+                
+            </Entry>
+                   
 
             <Entry x:Name="Password" 
                    Text="{Binding Password}"

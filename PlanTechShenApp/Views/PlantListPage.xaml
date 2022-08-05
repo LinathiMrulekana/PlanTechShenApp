@@ -18,8 +18,10 @@
     </ContentPage.ToolbarItems>
     <ScrollView VerticalOptions="FillAndExpand">
          <StackLayout>
-
+           
+           
             <forms:ChartView x:Name="chartView"
+     
                          Grid.Row="2"
                          BackgroundColor="White"
                         HeightRequest="250"/>

@@ -42,5 +42,9 @@ namespace PlanTechShenApp.Views
             }
         }
 
+        private async void IOTSetupClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new IOTPage());
+        }
     }
 }

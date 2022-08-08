@@ -9,11 +9,15 @@
             <ToolbarItem Clicked="OnToolbarItemClicked" />
 
             <ToolbarItem Text="Client Support"
-                     Order="Secondary"
+                         Order="Secondary"
                          Clicked="ClientSupportClicked" />
 
-            <ToolbarItem Text="Settings"
-                     Order="Secondary"
+        <ToolbarItem Text="IOT Set up"
+                         Order="Secondary"
+                         Clicked="IOTSetupClicked"/>
+
+        <ToolbarItem Text="Settings"
+                         Order="Secondary"
                          Clicked="SettingsClicked"/>
         </ContentPage.ToolbarItems>
     <ImageButton Source="chat.png"

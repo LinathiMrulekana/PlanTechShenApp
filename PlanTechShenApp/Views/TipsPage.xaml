@@ -13,6 +13,8 @@
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
            
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -51,142 +53,163 @@
                VerticalOptions="Start" />
 
         <BoxView Grid.Row="1"
-                 Color="CornflowerBlue" />
+                 Color="ForestGreen" />
         <Label Grid.Row="1"
                Text="Asparagus"
+               FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
         <BoxView Grid.Row="1"
                  Grid.Column="1"
-                 Color="DodgerBlue" />
+                 Color="GreenYellow" />
 
         <Label Grid.Row="1"
                Grid.Column="1"
                Text="tomato,   pepper,   potato,   brassicas,carrots, parsley"
+               FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
         <BoxView Grid.Row="1"
                  Grid.Column="2"
-                 Color="DarkSlateBlue" />
+                 Color="ForestGreen" />
 
 
         <Label Grid.Row="1"
                Grid.Column="2"
                Text="legumes"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
         <BoxView Grid.Row="2"
-                 Color="SteelBlue" />
+                 Color="GreenYellow" />
 
         <Label Grid.Row="2"
                Text="Basil"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
         <BoxView Grid.Row="2"
                  Grid.Column="1"
-                 Color="LightBlue" />
+                 Color="ForestGreen" />
 
         <Label Grid.Row="2"
                Grid.Column="1"
                Text="pepper, tomato, asparagus, oregano"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
 
         <BoxView Grid.Row="2"
                  Grid.Column="2"
-                 Color="GhostWhite" />
+                 Color="GreenYellow" />
         <Label Grid.Row="2"
                Grid.Column="2"
                Text="none"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
         
         <BoxView Grid.Row="3"
                  Grid.Column="0"
-                 Color="WhiteSmoke"/>
+                 Color="ForestGreen"/>
         <Label Grid.Row="3"
                Grid.Column="0"
                Text="Beans, bush"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
 
         <BoxView Grid.Row="3"
                  Grid.Column="1"
-                 Color="WhiteSmoke"/>
+                 Color="GreenYellow"/>
         <Label Grid.Row="3"
                Grid.Column="1"
                Text="cucumber, strawberry"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
 
         <BoxView Grid.Row="3"
                  Grid.Column="2"
-                 Color="WhiteSmoke"/>
+                 Color="ForestGreen"/>
         <Label Grid.Row="3"
                Grid.Column="2"
                Text="dry beans"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
 
         <BoxView Grid.Row="4"
                  Grid.Column="0"
-                 Color="Aqua"/>
+                 Color="GreenYellow"/>
         <Label Grid.Row="4"
                Grid.Column="0"
                Text="Beans, pole"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
 
         <BoxView Grid.Row="4"
                  Grid.Column="1"
-                 Color="Aqua"/>
+                 Color="ForestGreen"/>
         <Label Grid.Row="4"
                Grid.Column="1"
                Text="corn, radishes, nasturtium, zinnia"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
 
         <BoxView Grid.Row="4"
                  Grid.Column="2"
-                 Color="Aqua"/>
+                 Color="GreenYellow"/>
         <Label Grid.Row="4"
                Grid.Column="2"
                Text="sunflower, beet,brassicas"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
 
         <BoxView Grid.Row="5"
                  Grid.Column="0"
-                 Color="White"/>
+                 Color="ForestGreen"/>
         <Label Grid.Row="5"
                Grid.Column="0"
                Text="Beets"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
 
         <BoxView Grid.Row="5"
                  Grid.Column="1"
-                 Color="DarkViolet"/>
+                 Color="GreenYellow"/>
         <Label Grid.Row="5"
                Grid.Column="1"
                Text="bush beans, brassicas, lettuce, alliums"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
 
         <BoxView Grid.Row="5"
                  Grid.Column="2"
-                 Color="LavenderBlush"/>
+                 Color="ForestGreen"/>
         <Label Grid.Row="5"
                Grid.Column="2"
                Text="pole beans"
+                FontSize="15"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
-
-
-
+        
         <BoxView Grid.Row="6"/>
+        <Button Text="Learn more"
+                Grid.Row="6"
+                Clicked="LearnMoreClickedAsync"/>
+
+
+        <BoxView Grid.Row="6"
+                 Grid.Column="2"/>
         <Button Text="start up"
                 Grid.Row="6"
+                Grid.Column="2"
                 Clicked="StartUpClicked"/>
     </Grid>
     

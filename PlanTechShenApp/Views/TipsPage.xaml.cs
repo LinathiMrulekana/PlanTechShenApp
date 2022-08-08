@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -39,6 +39,18 @@ namespace PlanTechShenApp.Views
         private void PlantListView(object sender, ItemTappedEventArgs e)
         {
 
+        }
+
+        private async void LearnMoreClickedAsync(object sender, EventArgs e)
+        {
+            var current = Connectivity.NetworkAccess;
+
+            if (current == NetworkAccess.Internet)
+            {
+                await Browser.OpenAsync("http://growingyourfoods.com/companion-plants/");
+
+
+            }
         }
     }
 }

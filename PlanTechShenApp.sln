@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{078606
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{ABB1C1DF-CFF3-4D06-9A47-67CB834076FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanTechShenShared", "PlanTechShenShared\PlanTechShenShared.csproj", "{89594C95-7CB4-43A3-9EEC-A74E97F7527E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanTechShenShared", "PlanTechShenShared\PlanTechShenShared.csproj", "{89594C95-7CB4-43A3-9EEC-A74E97F7527E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

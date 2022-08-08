@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace PlanTechShenApp.Models
 {
@@ -19,6 +20,11 @@ namespace PlanTechShenApp.Models
 
         public DateTime  LastLogin { get; set; }
         public bool Enabled { get; set; }
+
+        public Task Authenticate(object value1, object value2)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

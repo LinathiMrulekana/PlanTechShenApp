@@ -26,4 +26,4 @@
             Text="Ok"
             Style="{StaticResource Base_Button}"></Button>
     </StackLayout>
-</Frame
+</Frame>

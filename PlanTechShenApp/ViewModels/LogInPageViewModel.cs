@@ -58,7 +58,7 @@ namespace PlanTechShenApp.ViewModels
                         // TODO set login state
 
                         _dataCache.IsAuthenticated = true;
-                        _dataCache.AuthenticatedCustomer = authResponse.AuthenticatedCustomer;
+                        _dataCache.AuthenticatedCustomer = authResponse.AuthenticatedUserAccount;
 
 
                         await NavigationService.NavigateAsync("myapp:///NavigationPage/HomePage");

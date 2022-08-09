@@ -36,6 +36,7 @@ namespace NFApp1
 
         }
         */
+       
         public static DetectionData ReadMoistureSensor(DfRobotMoistureSensor sensor)
         { 
             var moistureDegrees = new DetectionData();

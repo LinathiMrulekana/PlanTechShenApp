@@ -19,6 +19,6 @@ namespace PlanTechShenApp.Data
         public DbSet<Authentication> Authentication { get; set; }
         public DbSet<Client> Client { get; set; }
         public DbSet<UserAccount> UserAccount { get; set; }
-        
+        public DbSet<Detection> Detections { get; set; }
     }
 }

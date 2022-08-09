@@ -5,6 +5,6 @@ namespace PlanTechShenAppWebApi.Models
     public class AuthResponse
     {
         public bool Authenticated { get; set; }
-        public Client AuthenticatedCustomer { get; set; }
+        public Client AuthenticatedUserAccount { get; set; }
     }
 }

@@ -9,6 +9,9 @@
         UserAccountNotValid,
         userAccountCreationFailed,
         UserNotValid,
-        
+        DetectionFailed,
+        DetectiontNotValid,
+        DetectionCreationFailed,
+
     }
 }

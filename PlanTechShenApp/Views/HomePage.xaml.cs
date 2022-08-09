@@ -23,13 +23,15 @@ namespace PlanTechShenApp
 
         private async void SignInClicked(object sender, EventArgs e)
         {
+           
+
             string Name = string.Empty;
             string Surname = string.Empty;
             string Cellphone = string.Empty;
             string Email = string.Empty;
             string Password = string.Empty;
             string ConfirmPassword = string.Empty;
-            
+
 
             if ((string.IsNullOrEmpty(Name)) &&
                 (string.IsNullOrEmpty(Surname)) &&
@@ -38,17 +40,15 @@ namespace PlanTechShenApp
                 (string.IsNullOrEmpty(ConfirmPassword)) &&
                 (string.IsNullOrEmpty(Cellphone)))
             {
-                await DisplayAlert("Alert", "PLEASE FILL IN THE BLANK SPACES", "OK");
-            }
-            else if (Password != ConfirmPassword)
-            {
-                await DisplayAlert("Alert", "Passwords are not the same", "OK");
-            }
-            else
-
                 await Navigation.PushAsync(new PlantsHomeTabbedPage());
-            
+
+            }
+
+
+
+
+
+
         }
-      
-    }
-}
+    }       
+} 

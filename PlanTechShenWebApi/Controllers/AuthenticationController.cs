@@ -25,6 +25,7 @@ namespace PlanTechshenapppWebApi.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] AuthRequest auth)
         {
+
             try
             {
                 var result = _userDbRepository.PerformAuthenticationCheck(auth.Username, auth.Password);

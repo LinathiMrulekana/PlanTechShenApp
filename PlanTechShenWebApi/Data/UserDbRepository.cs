@@ -144,6 +144,39 @@ namespace PlanTechShenWebApi.Data
 
 
         #endregion
+        #region Detection
+        public Detection GetDeviceByDeviceId(int id, bool fullFetch = true)
+        {
+            if (fullFetch)
+            {
+                var detection = _userContext.Detections.Where(x => x.DeviceId == id).Include(c => c.WaterLevelPercentage).FirstOrDefault();
+                return detection;
+            }
+            else
+            {
+                var detection = _userContext.Detections.Where(x => x.DeviceId == id).FirstOrDefault();
+                return detection;
+            }
+        }
+
+        public List<Detection> GetDetectionsByDeviceId(int id)
+        {
+            var detections = _userContext.Detections.Where(x => x.DeviceId == id).OrderBy(x => x.DetectionDate).ToList();
+
+            return detections;
+        }
+
+        public Detection CreateNewDetection(Detection detection)
+        {
+            _userContext.Detections.Add(detection);
+            _userContext.SaveChanges();
+
+            return detection;
+        }
+
+
+
+        #endregion
 
 
         #region UserAccount

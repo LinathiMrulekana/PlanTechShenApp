@@ -4,7 +4,6 @@ using PlanTechShenWebApi.Data;
 using PlanTechShenWebApi.ENums;
 using PlanTechShenWebApi.Interfaces;
 using PlanTechShenWebApi.Models;
-using IUserDbRepository = PlanTechShenWebApi.Data.IUserDbRepository;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -58,6 +57,7 @@ namespace PlanTechshenAppWebApi.Controllers
         {
             return _userDbRepository.GetClientBySurname(Surname);
         }
+      //  public Client Get([FromQuery]) int 
 
     }
 }
